@@ -1,0 +1,28 @@
+{
+  "name": "pilot-remotion-simple",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Pilot project for rendering video with Remotion, without a video generation API",
+  "license": "MIT",
+  "type": "module",
+  "packageManager": "pnpm@11.18.0",
+  "engines": {
+    "node": ">=26 <27"
+  },
+  "scripts": {
+    "dev": "remotion studio",
+    "render": "remotion render HelloVideo out/hello.mp4",
+    "still": "remotion still HelloVideo out/hello.png --frame=60",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.538",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "remotion": "4.0.538"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.0",
+    "typescript": "^5.9.0"
+  }
+}
