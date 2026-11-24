@@ -9,7 +9,7 @@
 [![GitHub Repo stars](https://img.shields.io/github/stars/jyje/pilot-remotion-simple?style=social)](https://github.com/jyje/pilot-remotion-simple)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Node.js](https://img.shields.io/badge/Node.js-26-5FA04E?logo=nodedotjs&logoColor=white)](https://nodejs.org)
-[![pnpm](https://img.shields.io/badge/pnpm-11.18.0-F69220?logo=pnpm&logoColor=white)](https://pnpm.io)
+[![pnpm](https://img.shields.io/badge/pnpm-12.23.0-F69220?logo=pnpm&logoColor=white)](https://pnpm.io)
 [![Remotion](https://img.shields.io/badge/Remotion-4.0.538-0B84F3)](https://www.remotion.dev)
 [![React](https://img.shields.io/badge/React-19-149ECA?logo=react&logoColor=white)](https://react.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
@@ -42,7 +42,7 @@
 
 ## 시작하기
 
-요구 사항: Node.js 26, pnpm 11.18.0(`corepack enable`로 사용). `.nvmrc`가 Node 주 버전을 고정해요.
+요구 사항: Node.js 26(26.13.1), pnpm 12.23.0(`corepack enable`로 사용). `.nvmrc`가 Node 주 버전을 고정해요.
 
 ```sh
 git clone https://github.com/jyje/pilot-remotion-simple.git
@@ -66,7 +66,7 @@ corepack pnpm exec remotion render HelloVideo out/hello.mp4 \
   --browser-executable="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 ```
 
-pnpm 11은 의존성의 빌드 스크립트 실행을 승인하라고 요구해요. 이 저장소는 Remotion 번들러가
+pnpm 11 이상은 의존성의 빌드 스크립트 실행을 승인하라고 요구해요. 이 저장소는 Remotion 번들러가
 네이티브 바이너리를 쓰는 `esbuild`만 `pnpm-workspace.yaml`에서 허용해요.
 
 ## 프로젝트 구조
